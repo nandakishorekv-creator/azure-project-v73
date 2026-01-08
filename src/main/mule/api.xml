@@ -7,6 +7,8 @@
       xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit"
       xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
         http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+<apikit:config name="azure-project-v73-apikit-config" api="api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" doc:name="APIKit Router Config" />
+ 
 
   <flow name="azure-project-v73-api-main" doc:name="azure-project-v73 API Main" doc:id="33b8374f-234e-21f6-bf38-7cb991c4ee87">
     <http:listener path="/api/${api.majorVersion}/*" config-ref="HTTPS_Listener_config" doc:name="HTTP Listener" doc:id="edb9f85c-c842-696d-e8ad-0ecad71e1511">
